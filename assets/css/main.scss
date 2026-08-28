@@ -514,6 +514,70 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   padding-bottom: 1rem;
 }
 
+#part-6 {
+  background-image: url(/assets/images/part-6.png);
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+#part-7 {
+  background-color: $color-text;
+  background-image: url(/assets/images/part-7.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: $color-primary;
+}
+
+#part-7 .left-part {
+  padding-bottom: 0;
+}
+
+#part-7 .left-part h1 {
+  color: $color-primary;
+}
+
+#part-7 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;;
+  flex-wrap: wrap;;
+}
+
+#part-7 ul li {
+  display: block;
+  align-items: center;
+  background-color: $color-text;
+  color: $color-primary;
+  padding: 0.5rem 1rem;
+  flex: 1 1 0;
+}
+
+#part-7 ul li div {
+  background-color: $color-secondary;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+#part-8 {
+  background-image: url(/assets/images/part-8.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
 #bottom-blurb {
   background-color: $color-primary;
   background-image: url('/assets/images/bottom-blurb.png');
@@ -582,6 +646,25 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
 
   #part-5 .services-left {
     margin-left: inherit;
+  }
+
+  #part-6 {
+    padding-bottom: 3rem;
+  }
+
+  #part-7 ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #part-7 ul li {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #part-8 {
+    padding-bottom: 5rem;
   }
 
   #bottom-blurb {
