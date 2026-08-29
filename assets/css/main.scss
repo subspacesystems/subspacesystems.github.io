@@ -369,6 +369,30 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   margin-top: 1rem;
 }
 
+#front-acr {
+  background-color: $color-primary;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#front-acr .acr-callout {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#front-acr .acr-callout p {
+  font-size: 1.1rem;
+}
+
+#front-acr .acr-callout .price {
+  margin-top: 1rem;
+}
+
+#front-acr .acr-callout button {
+  margin-top: 1rem;
+}
+
 #part-3 {
   background-image: url(/assets/images/part-3.png);
   background-size: cover;
