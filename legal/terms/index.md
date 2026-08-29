@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Terms & Conditions
+legal: true
 ---
 
-# Terms & Conditions for Subspace Systems
-**Effective Date:** June 10, 2025
+<p class="legal-date">Effective Date: June 10, 2025</p>
 
 Please read these Terms & Conditions ("Terms," "Terms & Conditions") carefully before using the subspacesystems.com website (the "Service") operated by Subspace Systems LLC dba Subspace Systems ("us," "we," or "our").
 
@@ -77,6 +77,10 @@ Any dispute or claim arising out of or relating to these Terms or the breach the
 
 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
 
+<div class="legal-contact" markdown="1">
+
 ## 13. Contact Us
 
 If you have any questions about these Terms, please contact us by visiting this page on our website: [subspacesystems.com/contact]({{ '/contact' | relative_url }})
+
+</div>
