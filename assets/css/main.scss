@@ -672,6 +672,54 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   line-height: 2.2rem;;
 }
 
+#acr-1 {
+  background-image: url(/assets/images/part-6.png);
+  background-size: cover;
+  padding-bottom: 8rem;
+}
+
+#acr-1 button {
+  margin-top: 1rem;
+}
+
+#acr-2 {
+  background-color: $color-background;
+}
+
+#acr-3 {
+  background-image: url(/assets/images/part-8.png);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+
+.offer-box {
+  background-color: rgba($color-accent-1, 0.15);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+}
+
+.offer-box .price {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $color-secondary;
+  margin: 0 0 0.5rem;
+}
+
+.offer-box .price-note {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#acr-3 h2 {
+  margin-top: 2.5rem;
+}
+
 .legal-content {
   padding: 4rem 6rem;
 }
@@ -851,6 +899,14 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   #bottom-blurb p {
     font-size: 1rem;
     line-height: 1.8rem;
+  }
+
+  #acr-1 {
+    padding-bottom: 3rem;
+  }
+
+  #acr-3 {
+    padding-bottom: 7rem;
   }
 }
 
