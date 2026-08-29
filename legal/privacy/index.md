@@ -1,11 +1,10 @@
 ---
 layout: default
 title: Privacy Policy
+legal: true
 ---
 
-# Privacy Policy for Subspace Systems
-
-**Effective Date:** June 10, 2025
+<p class="legal-date">Effective Date: June 10, 2025</p>
 
 This Privacy Policy describes how Subspace Systems LLC dba Subspace Systems ("we," "us," or "our") collects, uses, and discloses information when you visit our website at subspacesystems.com (the "Site") and engage with our consulting and contracting services.
 
@@ -101,6 +100,20 @@ Our Site and services are not directed to individuals under the age of 18. We do
 
 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 
+<div class="legal-contact" markdown="1">
+
 ## 10. Contact Us
 
 If you have any questions about this Privacy Policy, please contact us by visiting this page on our website: [subspacesystems.com/contact]({{ '/contact' | relative_url }})
+
+</div>
+
+<div id="bottom-blurb">
+
+<p>We're currently accepting new clients for architecture consulting, rapid prototyping, and system integration projects.</p>
+
+<button>
+    <a href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
+</button>
+
+</div>
