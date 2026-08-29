@@ -107,3 +107,13 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 If you have any questions about this Privacy Policy, please contact us by visiting this page on our website: [subspacesystems.com/contact]({{ '/contact' | relative_url }})
 
 </div>
+
+<div id="bottom-blurb">
+
+<p>We're currently accepting new clients for architecture consulting, rapid prototyping, and system integration projects.</p>
+
+<button>
+    <a href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
+</button>
+
+</div>

@@ -50,7 +50,6 @@ header .logo {
 
 main {
   padding: 0;
-  padding-bottom: 6rem;
   line-height: 1.6;
   background-color: $color-background;
 }
@@ -698,6 +697,14 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   margin-top: 0;
 }
 
+.legal-content #bottom-blurb {
+  column-span: all;
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: -4rem;
+}
+
 @media screen and (min-width: 976px) {
   .legal-content {
     column-count: 2;
@@ -725,6 +732,10 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
 
   .legal-content {
     padding: 2rem;
+  }
+
+  .legal-content #bottom-blurb {
+    margin-bottom: -2rem;
   }
 
   .left-part, .right-part {
