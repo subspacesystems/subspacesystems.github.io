@@ -89,8 +89,6 @@ If you have any questions about these Terms, please contact us by visiting this 
 
 <p>We're currently accepting new clients for architecture consulting, rapid prototyping, and system integration projects.</p>
 
-<button>
-    <a href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
-</button>
+<a class="button" href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
 
 </div>

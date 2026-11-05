@@ -4,3 +4,7 @@ $color-secondary:      #1FD5FF;
 $color-accent-1:       #8E83FC;
 $color-background:     #091126;
 $color-text:           #EEF7FF;
+
+// Text-safe cyan for links and hovers on light (ion) backgrounds: 4.9:1 on #EEF7FF.
+// Plain cyan is only 1.6:1 there.
+$color-secondary-ink:  #00739C;

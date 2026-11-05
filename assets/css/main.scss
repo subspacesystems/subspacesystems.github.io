@@ -215,30 +215,37 @@ footer {
   text-decoration: none;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-secondary-ink;
   }
 }
 
-button {
+// Primary buttons: violet with navy text (6.1:1; ion text was 2.85:1).
+// Labels use Roboto Medium; Orbitron is reserved for headings and large display text.
+// `.button` is a link styled as a button (navigation); `button` is for form submits.
+button,
+.button {
+  display: inline-block;
   background-color: $color-accent-1;
-  color: $color-text;
+  color: $color-background;
   border: none;
   padding: 1rem 1rem;
   border-radius: 8px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: semi-bold;
-
-  &:hover {
-    background-color: $color-accent-1;
-  }
-}
-
-button a {
-  color: $color-text;
+  font-family: 'Roboto', Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
   text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-out;
 
   &:hover {
-    color: darken($color-text, 5%);
+    background-color: lighten($color-accent-1, 6%);
+    color: $color-background;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-secondary;
+    outline-offset: 3px;
   }
 }
 
@@ -365,7 +372,8 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   margin-top: 0;
 }
 
-#part-2 div button {
+#part-2 div button,
+#part-2 div .button {
   margin-top: 1rem;
 }
 
@@ -389,7 +397,8 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   margin-top: 1rem;
 }
 
-#front-acr .acr-callout button {
+#front-acr .acr-callout button,
+#front-acr .acr-callout .button {
   margin-top: 1rem;
 }
 
@@ -702,7 +711,8 @@ input[type="checkbox"]:not(.nav-toggle):checked::before {
   padding-bottom: 8rem;
 }
 
-#acr-1 button {
+#acr-1 button,
+#acr-1 .button {
   margin-top: 1rem;
 }
 
