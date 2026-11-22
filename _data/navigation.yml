@@ -1,5 +1,7 @@
 - title: Home
   url: /
+- title: Products
+  url: /products/
 - title: Services
   url: /services/
 #- title: Blog

@@ -8,3 +8,12 @@ $color-text:           #EEF7FF;
 // Text-safe cyan for links and hovers on light (ion) backgrounds: 4.9:1 on #EEF7FF.
 // Plain cyan is only 1.6:1 there.
 $color-secondary-ink:  #00739C;
+
+// Neutral ramp and product signatures (from the product-family brand tokens, Nov 2026).
+$color-space-850:      #0D162D;  // panels and cards on navy
+$color-space-700:      #263047;  // hairline borders on dark
+$color-muted:          #AAB1C1;  // space-300: muted text on dark
+$color-border-control: #5F697E;  // space-500: secondary button outlines (3:1)
+$color-action-hover:   #A9A1FD;
+// Drydock product signature. Identity accents only; navy text on it, never ion.
+$color-drydock:        #FF8A3D;

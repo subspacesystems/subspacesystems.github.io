@@ -1,0 +1,27 @@
+---
+layout: default
+title: Products
+description: Software from Subspace Systems, starting with Drydock, a free and open-source desktop 3D modeler.
+---
+
+<div id="products-intro" class="part">
+  <div class="narrow">
+    <h1>Software for People Who Build Things</h1>
+    <p>Subspace Systems makes practical, affordable software for designers, makers, woodworkers and small
+      firms. Our products run on your own computer, work offline, and keep your work in open, documented
+      formats.</p>
+  </div>
+</div>
+
+<div id="products-list" class="part">
+  {% for product in site.data.products %}
+  {% include product_card.html product=product %}
+  {% endfor %}
+
+  <div class="product-upcoming">
+    <h2>More on the Way</h2>
+    <p>We're working on more tools in the same spirit. Want to hear when they're ready, or have a problem
+      you'd like us to solve?</p>
+    <a class="button secondary" href="{{ '/contact' | relative_url }}">Get in Touch</a>
+  </div>
+</div>

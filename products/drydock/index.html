@@ -1,0 +1,117 @@
+---
+layout: default
+title: Drydock
+description: Subspace Drydock is a free, open-source desktop 3D modeler for buildings, furniture and 3D prints. Sketch flat shapes and pull them into solids. Windows and Linux.
+image: /assets/images/products/drydock/drydock-house.png
+---
+
+{% assign dd = site.data.products | where: "name", "Drydock" | first %}
+
+<div id="dd-hero" class="part">
+  <div class="dd-hero-text">
+    <img src="{{ '/assets/images/products/drydock/drydock-lockup.svg' | relative_url }}" alt="Subspace Drydock" class="dd-lockup" />
+    <p class="dd-lede">A free desktop 3D modeler for buildings, rooms, furniture, products and anything else you can
+      draw. Sketch flat shapes and pull them into solids, like drawing on paper with depth.</p>
+    <ul class="product-tags">
+      {% for tag in dd.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+    <div class="button-row">
+      <a class="button" href="{{ dd.download_url }}">Download Drydock &emsp; &neArr;</a>
+      <a class="button secondary" href="{{ dd.source_url }}">View on GitHub</a>
+    </div>
+  </div>
+  <figure class="dd-shot">
+    <img src="{{ dd.image | relative_url }}" alt="{{ dd.image_alt }}" width="1280" height="800" />
+  </figure>
+</div>
+
+<div id="dd-features" class="part">
+  <h1>What It Does</h1>
+  <div class="feature-grid">
+    <div class="feature">
+      <h3>Drawing</h3>
+      <p>Lines, rectangles, circles and arcs with inference snapping and typed dimensions.</p>
+    </div>
+    <div class="feature">
+      <h3>Modeling</h3>
+      <p>Push/pull, Move, Rotate, Scale, Flip, Follow Me and Offset. Groups, reusable components, and tags to
+        show and hide parts of a model.</p>
+    </div>
+    <div class="feature">
+      <h3>3D Printing</h3>
+      <p>Check that a model is a printable solid, repair it, and export STL or 3MF.</p>
+    </div>
+    <div class="feature">
+      <h3>Materials</h3>
+      <p>Paint colors and textures onto faces.</p>
+    </div>
+    <div class="feature">
+      <h3>Sun &amp; Shadows</h3>
+      <p>Set a location, date and time and watch the shadows move.</p>
+    </div>
+    <div class="feature">
+      <h3>Open Files</h3>
+      <p>A documented native <code>.drydock</code> format. Imports COLLADA (DAE), STL and 3MF.</p>
+    </div>
+  </div>
+</div>
+
+<div id="dd-shadows" class="part">
+  <figure class="dd-shot">
+    <img src="{{ '/assets/images/products/drydock/drydock-shadows.png' | relative_url }}" alt="Drydock's Shadows panel with time of day, date, and light and dark settings" loading="lazy" width="1280" height="800" />
+  </figure>
+  <div>
+    <h1>Free, and Yours to Keep</h1>
+    <p>Drydock is free software under the GNU General Public License (version 3 or later). There's no
+      subscription and no account, and it works offline. Your models are saved in an open, documented
+      format.</p>
+    <p>It's written from scratch in Rust and contains no code or artwork from other 3D modelers.</p>
+    <p>If Drydock is useful to you, you can support its development through GitHub Sponsors.</p>
+    <a class="button secondary" href="https://github.com/sponsors/subspacesystems">Sponsor Drydock &emsp; &hearts;</a>
+  </div>
+</div>
+
+<div id="dd-download" class="part">
+  <h1>Download</h1>
+  <p class="narrow">Get the latest version from the releases page on GitHub. Drydock is beta software: the
+    features work and are tested, but expect rough edges and keep copies of models you care about.</p>
+  <div class="download-grid">
+    <div class="download-card">
+      <h2>Windows</h2>
+      <p>Run <code>drydock-X.Y.Z-setup.exe</code>. The installed program finds, verifies and installs new
+        releases itself.</p>
+      <p class="note">The installer isn't code-signed yet, so Windows SmartScreen may warn you. The
+        <a href="{{ dd.source_url }}/blob/main/app/packaging/INSTALL.md">install notes</a> explain how to check
+        the download.</p>
+      <a class="button" href="{{ dd.download_url }}">Get the Installer &emsp; &neArr;</a>
+    </div>
+    <div class="download-card">
+      <h2>Linux</h2>
+      <p>Unpack <code>drydock-X.Y.Z-linux-x86_64.tar.gz</code> and run <code>./drydock</code>, or build it from
+        source with Cargo.</p>
+      <p class="note">Needs a working Vulkan driver. The
+        <a href="{{ dd.source_url }}#build-from-source">README</a> lists build dependencies.</p>
+      <a class="button" href="{{ dd.download_url }}">Get the Archive &emsp; &neArr;</a>
+    </div>
+  </div>
+  <p class="narrow note">Each release lists SHA-256 checksums in <code>SHA256SUMS</code>. A user guide ships
+    with the program (Help &gt; User Guide, or F1).</p>
+</div>
+
+<div id="dd-built" class="part">
+  <div class="narrow">
+    <h1>How It Was Built</h1>
+    <p>Drydock was built mostly by AI agents, directed by a person. An orchestrating agent wrote specifications
+      and acceptance tests, worker agents implemented them, and every change passed formatting, lint, tests, a
+      license gate and a snippet scan before it merged. A person at Subspace Systems set the direction, tried
+      each milestone in the real program, and accepted it. The
+      <a href="{{ dd.source_url }}/commits/main">commit history</a> shows the whole process.</p>
+    <p>Found a bug or have an idea? <a href="{{ dd.source_url }}/issues">Open an issue</a>. Contributions are
+      welcome under a <a href="{{ dd.source_url }}/blob/main/CLA.md">Contributor License Agreement</a>.</p>
+  </div>
+</div>
+
+<div id="bottom-blurb">
+  <p>Questions about Drydock, or interested in using it at your firm?</p>
+  <a class="button" href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
+</div>

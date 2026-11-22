@@ -1,0 +1,23 @@
+{% assign p = include.product %}
+<article class="product-card">
+  <a class="product-card-image" href="{{ p.url | relative_url }}">
+    <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy" width="1280" height="800" />
+  </a>
+  <div class="product-card-body">
+    <div class="product-card-title">
+      <img src="{{ p.icon | relative_url }}" alt="" class="product-icon" width="48" height="48" />
+      <div>
+        <h2>{{ p.name }}</h2>
+        <p class="product-tagline">{{ p.tagline }}</p>
+      </div>
+    </div>
+    <p>{{ p.summary }}</p>
+    <ul class="product-tags">
+      {% for tag in p.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+    <div class="button-row">
+      <a class="button" href="{{ p.url | relative_url }}">Learn More &emsp; &neArr;</a>
+      {% if p.download_url %}<a class="button secondary" href="{{ p.download_url }}">Download</a>{% endif %}
+    </div>
+  </div>
+</article>
