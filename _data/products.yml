@@ -1,0 +1,19 @@
+# Product catalog. The home page and /products/ render from this list, so a new
+# product needs an entry here plus its own page under /products/<slug>/.
+# `featured: true` puts it on the home page.
+
+- name: Drydock
+  full_name: Subspace Drydock
+  url: /products/drydock/
+  icon: /assets/images/products/drydock/drydock-icon.svg
+  image: /assets/images/products/drydock/drydock-house.png
+  image_alt: A house with a gable roof, windows, a door and three trees, with afternoon shadows, modeled in Drydock
+  tagline: A free 3D modeler for buildings, furniture and 3D prints
+  summary: >-
+    Sketch flat shapes and pull them into solids. Drydock is a desktop 3D modeler for buildings,
+    rooms, furniture, products and anything else you can draw, and it's especially good at
+    preparing models for 3D printing.
+  tags: [Free & open source, Windows, Linux, Beta]
+  download_url: https://github.com/subspacesystems/drydock/releases/latest
+  source_url: https://github.com/subspacesystems/drydock
+  featured: true

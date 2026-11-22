@@ -1,7 +1,7 @@
 theme: minima
 title: Subspace Systems
-tagline: A systems and software contracting and consulting firm
-description: Subspace Systems is a consulting and contracting firm specializing in software and systems architecture, particularly in aerospace and embedded systems.
+tagline: Software for people who build things, and systems consulting for teams that build them
+description: Subspace Systems makes Drydock, a free and open-source 3D modeler, and offers software and systems architecture consulting, particularly in aerospace and embedded systems.
 url: https://subspacesystems.com
 baseurl: ""
 author:

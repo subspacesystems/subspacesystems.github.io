@@ -9,11 +9,30 @@ is_front_page: true
 
 <h1>Welcome to Subspace Systems</h1>
 
-<p>Subspace Systems is a technical consulting and software architecture firm specializing in the design and integration of complex, high-performance systems. With deep expertise spanning safety-critical aerospace, embedded platforms, cloud infrastructure, and custom simulation environments, we bring clarity and execution to high-stakes engineering challenges.</p>
+<p>Subspace Systems builds practical software for people who design and make things, starting with
+<a href="{{ '/products/drydock/' | relative_url }}">Drydock</a>, a free and open-source 3D modeler. We also bring
+more than 20 years of systems and software architecture experience to client projects, from safety-critical
+aerospace to embedded platforms and cloud infrastructure.</p>
 
-<a class="button" href="{{ '/about' | relative_url }}">Learn More &emsp; &neArr;</a>
+<div class="button-row">
+<a class="button" href="{{ '/products' | relative_url }}">Our Products &emsp; &neArr;</a>
+<a class="button secondary" href="{{ '/services' | relative_url }}">Consulting Services</a>
+</div>
 
 </div>
+
+</div>
+
+<div id="front-products" class="part">
+
+<h1>Our Products</h1>
+
+{% assign featured = site.data.products | where: "featured", true %}
+{% for product in featured %}
+{% include product_card.html product=product %}
+{% endfor %}
+
+<p class="more-products">More products are on the way. <a href="{{ '/products' | relative_url }}">See all products</a>.</p>
 
 </div>
 
@@ -21,7 +40,7 @@ is_front_page: true
 
 <div class="left-part">
 
-<h1>What We Do</h1>
+<h1>Consulting &amp; Contracting</h1>
 
 <h2>Systems Architecture & Integration</h2>
 
@@ -75,11 +94,11 @@ is_front_page: true
 
 <h1>Why Subspace?</h1>
 
-<p>We combine hands-on engineering with strategic thinking. With over 20 years of experience across industries, we deliver systems that are not only technically sound—but actually solve your problem.</p>
+<p>We combine hands-on engineering with strategic thinking. With over 20 years of experience across industries, we build software and systems that are not only technically sound—but actually solve your problem.</p>
 
 <ul>
     <li>Practical software and systems expertise</li>
-    <li>Proven cloud and embedded experience</li>
+    <li>Open-source products you can rely on</li>
     <li>Fast-moving and low overhead</li>
     <li>Pacific Northwest-based, global reach</li>
 </ul>
@@ -90,7 +109,7 @@ is_front_page: true
 
 <div id="bottom-blurb">
     
-<p>We're currently accepting new clients for architecture consulting, rapid prototyping, and system integration projects.</p>
+<p>Questions about our products, or a project in mind? We'd like to hear from you.</p>
 
 <a class="button" href="{{ '/contact' | relative_url }}">Contact Us &emsp; &neArr;</a>
 
